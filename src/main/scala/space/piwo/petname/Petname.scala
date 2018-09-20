@@ -1,9 +1,12 @@
-import scala.io.Source
-import scala.util.Random
+package space.piwo.petname
+
 import Complexity.Complexity
 
-object Main extends App {
-  def generatePetname(words: Int, separator: String = "-", complexity: Complexity): String = {
+import scala.io.Source
+import scala.util.Random
+
+object Petname {
+  def generate(words: Int, separator: String = "-", complexity: Complexity): String = {
     implicit val complexityString: String = complexity.toString.toLowerCase
 
     val wordsList = words match {
@@ -41,5 +44,3 @@ object Complexity {
   case object Small extends Complexity
 
 }
-
-
