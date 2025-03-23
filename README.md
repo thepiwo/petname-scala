@@ -20,9 +20,9 @@ Currently published to the sonatype snapshots repository.
 
 in build.sbt add
 ```
-resolvers += Resolver.sonatypeRepo("snapshots")
+resolvers += Resolver.sonatypeRepo("staging")
 
-libraryDependencies += "space.piwo" %% "petname-scala" % "0.1-SNAPSHOT"
+libraryDependencies += "space.piwo" %% "petname-scala" % "0.2"
 ```
 
 in code you can 
